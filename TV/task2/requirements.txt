@@ -1,0 +1,5 @@
+FROM python
+COPY receive.py [+requirements.txt] ./
+RUN pip install
+CMD ["python3", "./receive.py"]
+
